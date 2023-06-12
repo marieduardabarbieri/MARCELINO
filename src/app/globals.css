@@ -1,0 +1,40 @@
+.LoginBox {
+    height: 100vh;
+    background: linear-gradient(120deg, #e75590, #00c2cb);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 450px;
+  
+  }
+  
+  .LoginContainer{
+    min-height: 400px;
+    width: 400px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #0000;
+  }
+
+  
+.LoginForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LoginInput{
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+ }
