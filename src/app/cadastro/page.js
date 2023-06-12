@@ -29,28 +29,32 @@ export default function Cadastro() {
     return (
         <div className='LoginBox'>
         <div className='LoginContainer'>
+        <h1 >Cadastro de Produtos</h1>
             <form  className='LoginForm' onSubmit={cadastrar}>
                 <input  className='LoginInput'
                     type="text"
                     placeholder='Nome:'
                     nome="nome"
                     onChange={e => setNome(e.target.value)}
-                /><br/>
+                />   <span className='LoginSpam'></span>
+
                 <input  className='LoginInput'
                     type="text"
                     placeholder='Idade:'
                     nome="idade"
                     onChange={e => setIdade(e.target.value)}
-                /><br/>
+                />   <span className='LoginSpam'></span>
+
                 <input  className='LoginInput'
                     type="text"
                     placeholder='UF:'
                     nome="uf"
                     onChange={e => setUF(e.target.value)}
-                /><br/>
-                <button type='submit'>Cadastrar</button>
+                />   <span className='LoginSpam'></span>
+
+                <button type='submit' className='LoginBotaoCadastrar'>Cadastrar</button>
                 <div>
-                    <a href='/'>Voltar</a>
+                    <a href='/' className='LoginAhref' >Voltar</a>
                 </div>
             </form>
         </div>
