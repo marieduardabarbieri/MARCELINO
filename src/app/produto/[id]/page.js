@@ -34,7 +34,7 @@ export default async function Produto({ params }) {
     return (
         <div>
             <p>{produtos.titulo}</p>
-            <Image width={100} height={100}></Image>
+            <Image src={produto.img} width={300} height={300}></Image>
             <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
         </div>
 
