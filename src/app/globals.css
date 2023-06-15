@@ -5,7 +5,7 @@ body{
 
 .LoginBox {
     height: 100vh;
-    background: linear-gradient(120deg, #e75590, #00c2cb);
+    background: rgb(209, 209, 209);
     text-align: center;
     display: flex;
     align-items: center;
@@ -43,16 +43,17 @@ body{
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     box-shadow: #0000;
   }
 
   .VerMais1 img{
     width:100%;
   }
-  p{
-    font-size: 15px;
+
+  .VerMais p{
+    font-size: 20px;
   }
+
 .LoginForm{
     width: 100%;
     display: flex;
@@ -113,8 +114,29 @@ body{
      background-position: right;
  }
 
- 
+ .Produto1 {
+  display: grid;
+  grid-template-columns:auto auto auto auto auto;
+  margin: 30px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
 
+ .Produto1 img{
+  width:100%;
+ }
+
+ hr{
+   background: linear-gradient(120deg, #e75590, #00c2cb);
+ }
+
+ .Produto3{
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+ }
 
  .LoginBotaoCadastrar2{
   height: 48px;
@@ -149,11 +171,17 @@ body{
   font-size: 16px;
   color: #484747;
   text-decoration: none;
-  padding: 30px;
+  padding: 60px;
 }
 
 
 img{
   width:10%;
   height: auto;
+}
+
+.botao{
+  text-align: center;
+  justify-content: center;
+  background-color: linear-gradient(120deg, #e75590, #00c2cb);
 }
