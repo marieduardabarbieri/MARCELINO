@@ -6,17 +6,21 @@ import '../globals.css'
 
 export default function Cadastro() {
     const route = useRouter();
-    const [nome, setNome] = useState();
-    const [idade, setIdade] = useState();
-    const [uf, setUF] = useState();
+    const [titulo, setTitulo] = useState();
+    const [data, setData] = useState();
+    const [preco, setPreco] = useState();
+    const [descricao, setDesc] = useState();
+    const [img, setImg] = useState();
 
     const cadastrar = (e) => {
         e.preventDefault()
         
         const produto = {
-            nome: nome,
-            idade: idade,
-            uf: uf
+            titulo: titulo,
+            data: data,
+            preco: preco,
+            descricao:descricao,
+            img:img
         }
         const produtoJson = JSON.stringify(produto);
         fetch("http://localhost:3003/produto", {
@@ -33,23 +37,36 @@ export default function Cadastro() {
             <form  className='LoginForm' onSubmit={cadastrar}>
                 <input  className='LoginInput'
                     type="text"
-                    placeholder='Nome:'
-                    nome="nome"
-                    onChange={e => setNome(e.target.value)}
+                    placeholder='titulo:'
+                    nome="titulo"
+                    onChange={e => setTitulo(e.target.value)}
                 />   <span className='LoginSpam'></span>
 
                 <input  className='LoginInput'
-                    type="text"
-                    placeholder='Idade:'
-                    nome="idade"
-                    onChange={e => setIdade(e.target.value)}
+                    type="date"
+                    nome="data"
+                    onChange={e => setData(e.target.value)}
                 />   <span className='LoginSpam'></span>
 
                 <input  className='LoginInput'
+                    type="number"
+                    placeholder='preco:'
+                    nome="preco"
+                    onChange={e => setPreco(e.target.value)}
+                />   <span className='LoginSpam'></span>
+
+             <input  className='LoginInput'
                     type="text"
-                    placeholder='UF:'
-                    nome="uf"
-                    onChange={e => setUF(e.target.value)}
+                    placeholder='descricao:'
+                    nome="descricao"
+                    onChange={e => setDesc(e.target.value)}
+                />   <span className='LoginSpam'></span>
+
+               <input  className='LoginInput'
+                    type="text"
+                    placeholder='img:'
+                    nome="img"
+                    onChange={e => setImg(e.target.value)}
                 />   <span className='LoginSpam'></span>
 
                 <button type='submit' className='LoginBotaoCadastrar'>Cadastrar</button>
