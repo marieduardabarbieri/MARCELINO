@@ -9,8 +9,10 @@ export default async function Home() {
   const produtos = await req.json();
 
   return (
-    <main> <Link className='LoginAhref' href="/cadastro" > CADASTRAR </Link>
+    <main className=''>
+      <Link className='LoginAhref2' href="/cadastro" > CADASTRAR </Link>
 
+       
       {produtos.map(produto => (
         <div key={produto.codigo}>
           <p>Produto: {produto.titulo}</p>
@@ -20,6 +22,7 @@ export default async function Home() {
           <img src={produto.img}></img>
           <Link className='LoginAhref' href={`/produto/${produto.codigo}`}>Ver Mais</Link>
         </div>
+      
       ))}
     </main>
   )

@@ -29,13 +29,15 @@ export default async function Produto({ params }) {
         }
     }
     return (
-        <div>
+        <div className='VerMais1'>
+        <div className='VerMais2'>
+        <img src={produto.img}></img>
             <p>Título: {produto.titulo}</p>
             <p>Descricao: {produto.descricao}</p>
-            <img src={produto.img}></img>
-            <button onClick={e => e.preventDefault(remover())}>REMOVER</button> 
-            <button onClick={e => e.preventDefault(uptade())}>alterar</button>
-       
+          
+            <button className='LoginBotaoCadastrar' onClick={e => e.preventDefault(remover())}>Remover</button> 
+            <button className='LoginBotaoCadastrar' onClick={e => e.preventDefault(uptade())}>Alterar</button>
+        </div>
         </div>
 
     )

@@ -26,7 +26,33 @@ body{
     box-shadow: #0000;
   }
 
+  .VerMais1 {
+    height: 100vh;
+    background: rgb(233, 232, 232);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+  .VerMais2{
+    width: 20%;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #0000;
+  }
+
+  .VerMais1 img{
+    width:100%;
+  }
+  p{
+    font-size: 15px;
+  }
 .LoginForm{
     width: 100%;
     display: flex;
@@ -66,7 +92,6 @@ body{
    width: 100%;
 }
 
-
 .LoginBotaoCadastrar{
     height: 48px;
     width: 100%;
@@ -89,11 +114,44 @@ body{
  }
 
  
+
+
+ .LoginBotaoCadastrar2{
+  height: 48px;
+  width: 5%;
+  outline: none;
+  background: linear-gradient(120deg, #e75590, #00c2cb);
+  background-size: 200%;
+  margin-bottom: 32px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  margin: 30px;
+}
+
+/*animacao do botao*/
+.LoginBotaoCadastrar2:hover{
+   background-position: right;
+}
+
+
 .LoginAhref{
     font-size: 16px;
     color: #949292;
     text-decoration: none;
 }
+
+.LoginAhref2{
+  font-size: 16px;
+  color: #484747;
+  text-decoration: none;
+  padding: 30px;
+}
+
 
 img{
   width:10%;
