@@ -9,7 +9,7 @@ body{
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 0px 0px 0px 450px;
+    justify-content: center;
   
   }
   
@@ -93,4 +93,9 @@ body{
     font-size: 16px;
     color: #949292;
     text-decoration: none;
+}
+
+img{
+  width:10%;
+  height: auto;
 }
