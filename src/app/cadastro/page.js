@@ -37,7 +37,7 @@ export default function Cadastro() {
             <form  className='LoginForm' onSubmit={cadastrar}>
                 <input  className='LoginInput'
                     type="text"
-                    placeholder='titulo:'
+                    placeholder='Titulo:'
                     nome="titulo"
                     onChange={e => setTitulo(e.target.value)}
                 />   <span className='LoginSpam'></span>
@@ -50,21 +50,21 @@ export default function Cadastro() {
 
                 <input  className='LoginInput'
                     type="number"
-                    placeholder='preco:'
+                    placeholder='Preço:'
                     nome="preco"
                     onChange={e => setPreco(e.target.value)}
                 />   <span className='LoginSpam'></span>
 
              <input  className='LoginInput'
                     type="text"
-                    placeholder='descricao:'
+                    placeholder='Descricao:'
                     nome="descricao"
                     onChange={e => setDesc(e.target.value)}
                 />   <span className='LoginSpam'></span>
 
                <input  className='LoginInput'
                     type="text"
-                    placeholder='img:'
+                    placeholder='Url img:'
                     nome="img"
                     onChange={e => setImg(e.target.value)}
                 />   <span className='LoginSpam'></span>
