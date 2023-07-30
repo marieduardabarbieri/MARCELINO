@@ -23,7 +23,7 @@ export default function Cadastro() {
             img:img
         }
         const produtoJson = JSON.stringify(produto);
-        fetch("http://localhost:3003/produtos", {
+        fetch("https://base-projeto-interdisciplinar-coral.vercel.app/produtos", {
             method: "POST",
             headers: { "content-Type": "application/json" },
             body: produtoJson

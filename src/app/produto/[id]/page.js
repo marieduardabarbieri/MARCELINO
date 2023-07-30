@@ -7,7 +7,7 @@ export default async function Produto({ params }) {
     const id = { id: parseInt(params.id) }
     const idJson = JSON.stringify(id);
 
-    const req = await fetch("http://localhost:3003/produto", {
+    const req = await fetch("https://base-projeto-interdisciplinar-coral.vercel.app/produtos", {
         method: "POST",
         cache: "no-cache",
         headers: { 'content-type': 'application/json' },
@@ -18,7 +18,7 @@ export default async function Produto({ params }) {
     const remover = () => {
         console.log(idJson)
         try {
-            fetch("http://localhost:3003/produtos", {
+            fetch("https://base-projeto-interdisciplinar-coral.vercel.app/produtos", {
                 method: "DELETE",
                 headers: { 'content-type': 'application/json' },
                 body: idJson
